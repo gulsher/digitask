@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="sidebar hidden-menu" id="main">
+            <div class="sidebar-text">
+                <div class="text-box">
+                    <p>cart</p>
+                    <a href="#" onclick="toggle()">close</a>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="sidebar-text border-element">
+                <div class="text-box">
+                    <ul>
+                        <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                        <li>AC Repair</li>
+                        <li>99$</li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="sidebar-text">
+                <div class="text-box border-element">
+                    <ul>
+                        <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                        <li>
+                            AC Plumbing
+                            <p>+ on site inspection</p>
+                        </li>
+                        <li>99$</li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="sidebar-text">
+                <div class="text-box border-element">
+                    <ul>
+                        <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                        <li>Basic Cost</li>
+                        <li>99$</li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class=" bottom">
+
+                <div class="sidebar-text border-element">
+                    <div class="text-box">
+                        <p>total</p>
+                        <p>499 A$</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="check">
+                    <p>Checkout</p>
+                </div>
+
+            </div>
+        </div>
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-xl-7 col-md-6 col-2">
+                            <ul>
+                                <li>
+                                    <a href="index.html"> <img src="./assets/logo_top.png"> </a>
+                                </li>
+                                <li class="d-none d-xl-inline-block">
+                                    <i class="fas fa-map-marker-alt nav-icon"></i>
+                                    <input type="text" value="Sidney" disabled>
+                                </li>
+                                <li class="d-none d-xl-inline-block">
+                                    <i class="fas fa-search nav-icon extend"></i>
+                                    <input type="text" placeholder="Search for a service" class="location">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xl-5 col-10">
+                            <ul class="right-navigation">
+                                <li><a data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-mobile-alt"></i><span class="d-none d-lg-none d-xl-inline-block">Download
+                                            Apps</span>
+                                    </a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user"></i> Roger <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Profile</a>
+                                        <a class="dropdown-item" href="#">My Orders</a>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                                </li>
+                                <li class="active-item ext" onclick="toggle()"><i class="fas fa-shopping-cart"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="profile">
+            <div class="full-w-img">
+                <div class="dark-img">
+                    <div class="container">
+                        <p>REPAIR PROFESSIONAL</p>
+                        <h3>Roger Rayes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-md-12">
+                        <div class="navigation-tab">
+                            <ul>
+                                <li class="active"><a href="">overview</a></li>
+                                <li><a href="">photos</a></li>
+                                <li><a href="">reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="profile-details">
+                            <div class="profile-image">
+                                <img src="./assets/profile_image3.jpg">
+                            </div>
+                            <div class="profile-image-text">
+                                <h4>roger rayes</h4>
+                                <p>Downtown Area, Sidney</p>
+                            </div>
+                            <div class="certified-img">
+                                <img src="./assets/guarantee/certified.png">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="average-rating">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-7 col-7">
+                                        <div class="rating-inner">
+                                            <h4><span class="star"><i class="fas fa-star"></i></span> 4.5</h4>
+                                            <p>average rating</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5 col-5">
+                                        <div class="rating-inner border-0">
+                                            <h4>720</h4>
+                                            <p>times hired</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro">
+                            <h4>introduction</h4>
+                            <p>
+                                Pellentesque tincidunt tristique neque, eget venenatis enim gravida quis. Fusce at
+                                egestas libero. Cras convallis egestas ullamcorper. Suspendisse sed ultricies nisl,
+                                pharetra rutrum mauris. Vestibulum at massa dui. Morbi et purus velit. Etiam tristique,
+                                justo eu condimentum efficitur, purus velit facilisis sem, id fringilla tortor quam
+                                quis dolor. <br><br> Praesent ultricies dignissim ex, at volutpat sapien ullamcorper
+                                rhoncus.
+                                Curabitur quam velit, ullamcorper ut congue eget, convallis et velit. Donec placerat,
+                                magna eu venenatis tempus, dui sapien aliquam libero, sit amet maximus erat massa quis
+                                nisi. Integer pharetra auctor arcu, non tincidunt dui fermentum ut. Nullam interdum
+                                sapien id mauris dapibus, a pharetra purus rhoncus. Nullam viverra iaculis tristique.
+                                Donec quis mauris ipsum. Nunc vehicula magna at erat tristique rutrum.
+                            </p>
+
+                            <h4>services</h4>
+                            <div class="services-user">
+                                <ul>
+                                    <li>
+                                        <div class="service-app">
+                                            <img src="./assets/electronics/ac.png" class="img-fluid">
+                                        </div>
+                                        <p>air conditioner</p>
+                                    </li>
+                                    <li>
+                                        <div class="service-app">
+                                            <img src="./assets/electronics/fridge.png" class="img-fluid">
+                                        </div>
+                                        <p>fridge</p>
+                                    </li>
+                                    <li>
+                                        <div class="service-app">
+                                            <img src="./assets/electronics/tv.png" class="img-fluid">
+                                        </div>
+                                        <p>TV</p>
+                                    </li>
+                                    <li>
+                                        <div class="service-app">
+                                            <img src="./assets/electronics/microwave.png" class="img-fluid">
+                                        </div>
+                                        <p>microwave</p>
+                                    </li>
+                                </ul>
+                                <a href="#">view all services</a>
+                            </div>
+                            <h4>brands</h4>
+                            <div class="brand">
+                                <button class="btn btn-default btn-sm mr-2">Sony</button>
+                                <button class="btn btn-default btn-sm mr-2">LG</button>
+                                <button class="btn btn-default btn-sm mr-2">Samsung</button>
+                            </div>
+                        </div>
+                        <div class="photos">
+                            <div class="full-w-img">
+                                <div class="dark-img">
+                                    <h4>work photos</h4>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><img src="./assets/Archive/air-conditioning-installation@2x.jpg" class="img-fluid"></li>
+                                <li><img src="./assets/Archive/install-an-hvac_airconditioner@2x.jpg" class="img-fluid"></li>
+                                <li><img src="./assets/Archive/Tri-City-May-B1@2x.jpg" class="img-fluid"></li>
+                                <li><img src="./assets/Archive/air_conditioning_installation@2x.jpg" class="img-fluid"></li>
+                                <li><img src="./assets/Archive/washingmachine_srcset-large@2x.jpg" class="img-fluid"></li>
+                                <li><img src="./assets/Archive/tv-repair@2x.jpg" class="img-fluid"></li>
+                            </ul>
+                        </div>
+                        <div class="reviews">
+                            <h3>reviews</h3>
+                            <div class="big-review-box">
+                                <div class="big-font">
+                                    <h1>4.5</h1>
+                                </div>
+                                <div class="big-rew">
+                                    <ul>
+                                        <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                        <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                        <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                        <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                        <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                    </ul>
+                                    <p>From 720 reviews</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="review-bars">
+                                <ul>
+                                    <li>excellent</li>
+                                    <li class="f1">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li><i class="fas fa-user"></i> 382</li>
+                                </ul>
+                                <ul>
+                                    <li>good</li>
+                                    <li class="f2">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li><i class="fas fa-user"></i> 283</li>
+                                </ul>
+                                <ul>
+                                    <li>average</li>
+                                    <li class="f3">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li><i class="fas fa-user"></i> 123</li>
+                                </ul>
+                                <ul>
+                                    <li>bad</li>
+                                    <li class="f4">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li><i class="fas fa-user"></i> 32</li>
+                                </ul>
+                                <ul>
+                                    <li>very bad</li>
+                                    <li class="f5">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li><i class="fas fa-user"></i> 12</li>
+                                </ul>
+                            </div>
+
+                            <div class="user-review">
+                                <div class="review-box">
+                                    <div class="customer-img">
+                                        <img src="./assets/profile_image3.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="customer-rew">
+                                        <p>Chad Evans</p>
+                                        <ul>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                            <li>5.0</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rew-date">
+                                        <p>12 november</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="review-box">
+                                    <div class="customer-img">
+                                        <img src="./assets/p3.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="customer-rew">
+                                        <p>Nicolas Guerrero</p>
+                                        <ul>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rew-date">
+                                        <p>9 june</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="review-box">
+                                    <div class="customer-img">
+                                        <img src="./assets/p1.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="customer-rew">
+                                        <p>Kevin Rivera</p>
+                                        <ul>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rew-date">
+                                        <p>8 july</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="review-box">
+                                    <div class="customer-img">
+                                        <img src="./assets/profile_image.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="customer-rew">
+                                        <p>Bruce Wade</p>
+                                        <ul>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                            <li>5.0</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rew-date">
+                                        <p>21 february</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="review-box">
+                                    <div class="customer-img">
+                                        <img src="./assets/p3.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="customer-rew">
+                                        <p>Ethan Coleman</p>
+                                        <ul>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rew-date">
+                                        <p>21 august</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="review-box">
+                                    <div class="customer-img">
+                                        <img src="./assets/p1.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="customer-rew">
+                                        <p>Kyle Schneider</p>
+                                        <ul>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star"></i></span></li>
+                                            <li><span class="star"><i class="fas fa-star-half-alt"></i></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rew-date">
+                                        <p>21 february</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <a href="#">view all brands</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="hiring-details">
+                            <div class="last-hire">
+                                <h5>last hire</h5>
+                                <div class="customer-img small">
+                                    <img src="./assets/p1.jpg" class="img-fluid">
+                                </div>
+                                <div class="customer-rew small">
+                                    <p>Kevin Rivera</p>
+                                    <h6>2 Days ago</h6>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="rating-box">
+                                <h1>5.0</h1>
+                                <p><span class="star"><i class="fas fa-star"></i></span> <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span> <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span></p>
+                            </div>
+                            <div class="rating-text">
+                                <p>
+                                    Pellentesque tincidunt tristique neque, eget venenatis enim gravida quis. Fusce at
+                                    egest libero. Cras convallis egestas ullamcorper. Suspendisse sed ultricies nisl,
+                                    pharetra rutr mauris. Vestibulum at massa dui.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer ext">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <p>company</p>
+                        <ul>
+                            <li>about</li>
+                            <li>contact</li>
+                            <li>services</li>
+                            <li>privacy</li>
+                            <li>policy</li>
+                            <li>conditions</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <p>cities</p>
+                        <ul>
+                            <li>sydney</li>
+                            <li>new york</li>
+                            <li>bangalore</li>
+                            <li>delhi</li>
+                            <li>washington</li>
+                            <li>canada</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 offset-md-2">
+                        <p>apps</p>
+                        <ul class="foot-img">
+                            <li>
+                                <img src="./assets/google_play.png" class="img-fluid">
+                            </li>
+                            <li>
+                                <img src="./assets/app_store.png" class="img-fluid">
+                            </li>
+                        </ul>
+                        <h6>we are social</h6>
+                        <ul class="social-img">
+                            <li><img src="./assets/facebook.png"></li>
+                            <li><img src="./assets/twitter.png"></li>
+                            <li><img src="./assets/instagram.png"></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-logo">
+                    <div>
+                        <img src="./assets/digitask_footer.png" class="img-fluid">
+                        <p>Copyrights 2018, All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/bootstrap.bundle.js"></script>
+        <script src="./js/bootstrap.js"></script>
+        <script>
+            function toggle() {
+                var a = document.getElementById('main');
+                a.classList.toggle('hidden-menu');
+            }
+        </script>
+
+    </body>
+
+</html>

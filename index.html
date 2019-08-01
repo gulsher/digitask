@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digitask</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css"> -->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+    <!-- sidebar -->
+    <div class="sidebar hidden-menu" id="main">
+        <div class="sidebar-text">
+            <div class="text-box">
+                <p>cart</p>
+                <a href="#" onclick="toggle()">Close</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text border-element">
+            <div class="text-box">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>AC Repair</li>
+                    <li>99$</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text">
+            <div class="text-box border-element">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>
+                        AC Plumbing
+                        <p>+ on site inspection</p>
+                    </li>
+                    <li>99$</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text">
+            <div class="text-box border-element">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>Basic Cost</li>
+                    <li>99$</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class=" bottom">
+            <div class="sidebar-text border-element">
+                <div class="text-box">
+                    <p>total</p>
+                    <p>499 A$</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="check">
+                <p onclick="window.location='login.html'">Checkout</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="mobile-menu hidden-menu" id="mobile">
+        <div class="close-menu">
+            <a href="" onclick="toggle_nav()"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <h4>Menu</h4>
+        <div class="menu-wrapper">
+            <ul>
+                <li>beauty services</li>
+                <li>pest controls</li>
+                <li>home needs</li>
+                <li>car services</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <ul>
+                            <li class="d-inline-block d-md-inline-block d-lg-none">
+                                <a href="#" class="mr-2 p-1" onclick="toggle_nav()"><i class="fas fa-bars"></i></a>
+                            </li>
+                            <li>
+                                <a href="index.html"> <img src="./assets/logo_top.png"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 col-6">
+                        <ul class="right-navigation">
+                            <li><a data-toggle="modal" data-target="#exampleModal"><i class="fas fa-mobile-alt"></i>
+                                    <div class="d-none d-lg-inline">Download
+                                        Apps</div>
+                                </a></li>
+                            <li><a data-toggle="modal" data-target="#exampleModal1"><i class="fas fa-user"></i>
+                                    <div class="d-none d-lg-inline">Login</div>
+                                </a></li>
+                            <li class="active-item" onclick="toggle()"><i class="fas fa-shopping-cart"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu d-none  d-lg-block">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Beauty Services <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Manicure</a>
+                                    <a class="dropdown-item" href="#">Pedicure</a>
+                                    <a class="dropdown-item" href="#">Waxing</a>
+                                    <a class="dropdown-item" href="#">Bleaching</a>
+                                    <a class="dropdown-item" href="#">Threading</a>
+                                    <a class="dropdown-item" href="#">massage</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Beauty Services <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Manicure</a>
+                                    <a class="dropdown-item" href="#">Pedicure</a>
+                                    <a class="dropdown-item" href="#">Waxing</a>
+                                    <a class="dropdown-item" href="#">Bleaching</a>
+                                    <a class="dropdown-item" href="#">Threading</a>
+                                    <a class="dropdown-item" href="#">massage</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Dropdown <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Manicure</a>
+                                    <a class="dropdown-item" href="#">Pedicure</a>
+                                    <a class="dropdown-item" href="#">Waxing</a>
+                                    <a class="dropdown-item" href="#">Bleaching</a>
+                                    <a class="dropdown-item" href="#">Threading</a>
+                                    <a class="dropdown-item" href="#">massage</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Beauty Services <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Manicure</a>
+                                    <a class="dropdown-item" href="#">Pedicure</a>
+                                    <a class="dropdown-item" href="#">Waxing</a>
+                                    <a class="dropdown-item" href="#">Bleaching</a>
+                                    <a class="dropdown-item" href="#">Threading</a>
+                                    <a class="dropdown-item" href="#">Massage</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-phone"></i> Contact</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="banner">
+                <h1>Need something fixed?</h1>
+                <h3>Let digitask do it for you</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Sidney">
+                    </li>
+                    <li>
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search for a service" class="location"><span class="go"><button
+                                class="new-btn red">Go</button></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="main-service owl-carousel owl-theme" id="owl-demo">
+
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/repair.png" class="img-fluid">
+                        <p>Repairs</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/house_cleaning.png" class="img-fluid">
+                        <p>House cleaning</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/car-wash.png" class="img-fluid">
+                        <p>car services</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/pest_control.png" class="img-fluid">
+                        <p>Pest control</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/painting.png" class="img-fluid">
+                        <p>Repairs</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/electronics.png" class="img-fluid">
+                        <p>Electronic</p>
+                    </div>
+                </div>
+
+
+
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/repair.png" class="img-fluid">
+                        <p>Repairs</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/house_cleaning.png" class="img-fluid">
+                        <p>House cleaning</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/car-wash.png" class="img-fluid">
+                        <p>car services</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/pest_control.png" class="img-fluid">
+                        <p>Pest control</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/painting.png" class="img-fluid">
+                        <p>Repairs</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="./assets/electronics.png" class="img-fluid">
+                        <p>Electronic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-text">
+                <div class="text-box">
+                    <h4>Popular Services</h4>
+                    <p>Most Popular Services</p>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#exampleModal2">More</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="image-box full-image ">
+                        <img src="assets/house_painging_package.jpg" class="img-fluid">
+                        <div class="offer">
+                            20% off
+                        </div>
+                        <div class="img-bottom-txt">
+                            house painting
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 col-sm-6">
+                    <div class="image-box full-image ">
+                        <img src="assets/house_cleaning_package.jpg" class="img-fluid">
+                        <div class="img-bottom-txt">
+                            house cleaning
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 col-sm-6">
+                    <div class="image-box full-image ">
+                        <img src="assets/doorstep_car_repair.jpg" class="img-fluid">
+                        <div class="img-bottom-txt">
+                            doorstep car repair
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-text">
+                <div class="text-box">
+                    <h4>Appliances Service</h4>
+                    <p>Home Appliance Repair Services</p>
+                </div>
+                <a href="#">More</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/installation.jpg" class="img-fluid">
+                        <p>
+                            installation
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/uninstallation.jpg" class="img-fluid">
+                        <p>
+                            un-installation
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/repair.jpg" class="img-fluid">
+                        <p>
+                            repair
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/maintaince.jpg" class="img-fluid">
+                        <p>
+                            maintenance
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-text">
+                <div class="text-box">
+                    <h4>Beauty Services</h4>
+                    <p>Home Appliance Repair Services</p>
+                </div>
+                <a href="#">More</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/manicure.jpg" class="img-fluid">
+                        <p>
+                            manicure
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/pedicure.jpg" class="img-fluid">
+                        <p>
+                            pedicure
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/waxing.jpg" class="img-fluid">
+                        <p>
+                            waxing
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/bleach.jpg" class="img-fluid">
+                        <p>
+                            bleaching
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/threading.jpg" class="img-fluid">
+                        <p>
+                            threading
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/detanning.jpg" class="img-fluid">
+                        <p>
+                            detaining
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box full-image">
+                        <img src="assets/message.jpg" class="img-fluid">
+                        <p>
+                            massage
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6">
+                    <div class="image-box">
+                        <p class="view"><a href="">view all</a></p>
+                        <p>
+                            more
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-text">
+                <div class="text-box">
+                    <h4>Electronic/Appliance Repair</h4>
+                    <p>Home Appliance Repair Services</p>
+                </div>
+                <a href="#">More</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/tv.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">TV</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/fridge.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">fridge</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/washing.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">washing</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/ac.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">AC</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/microwave.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">microwave</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/computer.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">computer</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box appliance">
+                        <img src="assets/electronics/laptop.png" class="img-fluid">
+                    </div>
+                    <p class="appliance-text">laptop</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="image-box">
+                        <p class="view"><a href="">view all</a></p>
+                        <p>
+                            more
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="demands">
+                <div class="demand-left">1000+ Services on demand</div>
+                <div class="demand-right">view all</div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="assist">
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <div class="book-now">
+                            <img src="./assets/logo_top.png" class="img-fluid">
+                            <h4>Need someone to assist?</h4>
+                            <p>Sitback and relax, Our dedicated Assistance manager can take care of <br> Things for
+                                you!</p>
+                            <button class="new-btn yellow">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="assist-img">
+                            <img src="./assets/booknow_lady.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guarantee">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="image-box guarantee-img">
+                            <img src="assets/guarantee/certified.png" class="img-fluid">
+                        </div>
+                        <p class="appliance-text extend">
+                            certified professionals
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="image-box guarantee-img">
+                            <img src="assets/guarantee/quality.png" class="img-fluid">
+                        </div>
+                        <p class="appliance-text extend">
+                            quality guaranteed
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="image-box guarantee-img">
+                            <img src="assets/guarantee/insured.png" class="img-fluid">
+                        </div>
+                        <p class="appliance-text extend">
+                            insured
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="image-box guarantee-img">
+                            <img src="assets/guarantee/professional.png" class="img-fluid">
+                        </div>
+                        <p class="appliance-text extend">
+                            Professional service
+                        </p>
+                    </div>
+                </div>
+                <div class="digitask-guarantee">Digitask Guarantee</div>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <p>Some Love from our customers</p>
+            <div class="row">
+                <div class="col-md-12 col-12 col-xl-4">
+                    <div class="review-box">
+                        <h4>Outstanding</h4>
+                        <hr>
+                        <p><i class="fas fa-quote-left"></i> Praesent eu dolor eu orci vehicula Vivamus sed
+                            sollicitudin libero, vel males velit. Nullam
+                            et maximus lorem. Suspen maximus dolor quis consequat volutpat. Donec vehicula elit
+                        </p>
+                        <div class="review-img">
+                            <img src="./assets/ann-morgan.png" class="img-fluid">
+                            <div class="review-text">
+                                <h5>nick evans</h5>
+                                <p>Tristique tempor mattis</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12 col-xl-4">
+                    <div class="review-box">
+                        <h4>Outstanding</h4>
+                        <hr>
+                        <p><i class="fas fa-quote-left"></i> Praesent eu dolor eu orci vehicula Vivamus sed
+                            sollicitudin libero, vel males velit. Nullam
+                            et maximus lorem. Suspen maximus dolor quis consequat volutpat. Donec vehicula elit
+                        </p>
+                        <div class="review-img">
+                            <img src="./assets/ann-morgan.png" class="img-fluid">
+                            <div class="review-text">
+                                <h5>nick evans</h5>
+                                <p>Tristique tempor mattis</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12 col-xl-4">
+                    <div class="review-box">
+                        <h4>Outstanding</h4>
+                        <hr>
+                        <p><i class="fas fa-quote-left"></i> Praesent eu dolor eu orci vehicula Vivamus sed
+                            sollicitudin libero, vel males velit. Nullam
+                            et maximus lorem. Suspen maximus dolor quis consequat volutpat. Donec vehicula elit
+                        </p>
+                        <div class="review-img">
+                            <img src="./assets/ann-morgan.png" class="img-fluid">
+                            <div class="review-text">
+                                <h5>nick evans</h5>
+                                <p>Tristique tempor mattis</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="new-btn yellow">Read More </button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <p>company</p>
+                    <ul>
+                        <li>about</li>
+                        <li>contact</li>
+                        <li>services</li>
+                        <li>privacy</li>
+                        <li>policy</li>
+                        <li>conditions</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <p>cities</p>
+                    <ul>
+                        <li>sydney</li>
+                        <li>new york</li>
+                        <li>bangalore</li>
+                        <li>delhi</li>
+                        <li>washington</li>
+                        <li>canada</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    <p>apps</p>
+                    <ul class="foot-img">
+                        <li>
+                            <img src="./assets/google_play.png" class="img-fluid">
+                        </li>
+                        <li>
+                            <img src="./assets/app_store.png" class="img-fluid">
+                        </li>
+                    </ul>
+                    <h6>we are social</h6>
+                    <ul class="social-img">
+                        <li><img src="./assets/facebook.png"></li>
+                        <li><img src="./assets/twitter.png"></li>
+                        <li><img src="./assets/instagram.png"></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-logo">
+                <div>
+                    <img src="./assets/digitask_footer.png" class="img-fluid">
+                    <p>Copyrights 2018, All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- modal -->
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content custom-w">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Download Apps</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modal">
+                        <p>We’ll send a download link via SMS to<br> your Phone</p>
+                        <input type="text" placeholder="Phone">
+                        <button class="new-btn purple">Send SMS</button>
+
+                        <div class="modal-foot">
+                            <ul>
+                                <li><img src="./assets/google_play.png"></li>
+                                <li><img src="./assets/app_store.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span class="or">or</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content custom-w">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modal">
+                        <input type="text" placeholder="Email Or Phone">
+                        <input type="text" placeholder="Password">
+                        <button class="new-btn purple">Login</button>
+
+                        <div class="modal-foot">
+                            <p>Social Login</p>
+                            <ul>
+                                <li><button class="new-btn fb">Facebook</button></li>
+                                <li><button class="new-btn fb google">Google</button></li>
+                            </ul>
+                            <h5>Dont have account?</h5>
+                            <button class="new-btn purple outline">Signup</button>
+                        </div>
+                    </div>
+                </div>
+                <span class="or or1">or</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content custom-w">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Repair Services</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="service-items">
+                        <ul>
+                            <li>
+                                <div class="service-item-img active-ser">
+                                    <img src="./assets/electronics/ac.png">
+                                    <p>AC</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/fridge.png">
+                                    <p>fridge</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/tv.png">
+                                    <p>tv</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/washing.png">
+                                    <p>washing<br> machine</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/water.png">
+                                    <p> water purifier</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/microwave.png">
+                                    <p>microwave</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/computer.png">
+                                    <p>computer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/laptop.png">
+                                    <p>laptop</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/toster.png">
+                                    <p>toaster</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/lights .png">
+                                    <p>lights</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/phone.png">
+                                    <p>phone</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="service-item-img">
+                                    <img src="./assets/electronics/other.png">
+                                    <p>others</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-btn">
+                        <a href="services-booking.html"><button class="new-btn purple b-sm">Next</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     $('.owl-carousel').owlCarousel({
+        //         items: 6,
+        //         loop: true,
+        //         margin: 0,
+        //         responsiveClass: true,
+        //         responsive: {
+        //             0: {
+        //                 items: 3,
+        //                 nav: true
+        //             },
+        //             576: {
+        //                 items: 3,
+        //                 nav: true,
+        //                 autoplay: true
+        //             },
+        //             768: {
+        //                 items: 6,
+        //                 nav: true,
+        //                 loop: true,
+        //                 autoplay: true
+        //             }
+        //         }
+        //     })
+        // })
+
+        $('.owl-carousel').owlCarousel({
+
+            margin: 0,
+            pagination: false,
+            items: 6,
+            itemsMobile: [360, 3],
+            itemsTablet: [480, 3],
+            itemsDesktopSmall: [700, 4],
+            itemsDesktop: [900, 5]
+
+        });
+    </script>
+    <script>
+        function toggle() {
+            var a = document.getElementById('main');
+            a.classList.toggle('hidden-menu');
+        }
+    </script>
+    <script>
+        function toggle_nav() {
+            var b = document.getElementById('mobile');
+            b.classList.toggle('hidden-menu');
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function alignModal() {
+                var modalDialog = $(this).find(".modal-dialog");
+                /* Applying the top margin on modal dialog to align it vertically center */
+                modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+            }
+            // Align modal when it is displayed
+            $(".modal").on("shown.bs.modal", alignModal);
+
+            // Align modal when user resize the window
+            $(window).on("resize", function () {
+                $(".modal:visible").each(alignModal);
+            });
+        });
+    </script>
+</body>
+
+</html>

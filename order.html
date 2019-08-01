@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div class="sidebar hidden-menu" id="main">
+        <div class="sidebar-text">
+            <div class="text-box">
+                <p>cart</p>
+                <a href="#" onclick="toggle()">close</a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text border-element">
+            <div class="text-box">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>AC Repair</li>
+                    <li>99$</li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text">
+            <div class="text-box border-element">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>
+                        AC Plumbing
+                        <p>+ on site inspection</p>
+                    </li>
+                    <li>99$</li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text">
+            <div class="text-box border-element">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>Basic Cost</li>
+                    <li>99$</li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class=" bottom">
+
+            <div class="sidebar-text border-element">
+                <div class="text-box">
+                    <p>total</p>
+                    <p>499 A$</p>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="check">
+                <p>Checkout</p>
+            </div>
+
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-3">
+                        <ul>
+                            <li>
+                                <a href="index.html"> <img src="./assets/logo_top.png"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 col-9">
+                        <ul class="right-navigation">
+                            <li><a data-toggle="modal" data-target="#exampleModal">
+                                    <i class="fas fa-mobile-alt"></i><span class="d-none d-lg-none d-xl-inline-block">Download
+                                        Apps</span>
+                                </a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user"></i> Roger <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">My Orders</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <li class="active-item" onclick="toggle()"><i class="fas fa-shopping-cart"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="recent-orders">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="top-profile">
+                        <img src="./assets/profile_image3.jpg" class="img-fluid">
+                        <h4>bruce wayne</h4>
+                        <p>downtown area, sidney</p>
+                        <p class="edit-prof"><a href="#">edit profile</a></p>
+                    </div>
+                    <div class="profile-email">
+                        <h4>email</h4>
+                        <p>bruce.sanders@mail.com</p>
+                        <h4>phone</h4>
+                        <p>(462)691-1253</p>
+                    </div>
+                    <div class="address-box mt-2">
+                        <h5>Home </h5>
+                        <p>#73 First Floor, New Road, 61 Arthur St, Strathfield NSW 2135,
+                            Australia
+                        </p>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <p class="font-weight-bold">Recent orders</p>
+                    <div id="accordion" role="tablist">
+                        <div class="card login-card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                        Order ID #8482 <button class="btn btn-warning btn-sm ml-2">ON GOING</button><i
+                                            class="fas fa-chevron-down float-right"></i></a>
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordion">
+                                <div class="appointment">
+                                    <div class="row">
+                                        <div class="col-md-4 col-4">
+                                            <div class="border-right">
+                                                <h5>appointment slot</h5>
+                                                <h4>10 AM to 12 PM</h4>
+                                                <p>2nd Nov 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <div class="border-right">
+                                                <h5>total server cost</h5>
+                                                <h4>289 A$</h4>
+                                                <p>+ On Inspection</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <h5>appointment slot</h5>
+                                            <h4 class="red">50 A$</h4>
+                                            <p>-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="billing-info">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="invoice">
+                                                <h4>invoice</h4>
+                                                <h5>professional invoice</h5>
+                                                <p>Assigned to</p>
+                                                <p class="red">roger reyes <button class="new-btn red-outline ml-3 "
+                                                        onclick="window.location='profile.html'">view
+                                                        profile</button></p>
+                                                <h6>61 Arthur St, Strathfield NSW 2135, Australia</h6>
+                                                <h6>(077)989-4459</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="pay-online">
+                                                <h4> <button class="new-btn red-outline long mb-1">pay50$ online</button></h4>
+                                                <div class="float-left">
+                                                    <p>billed on</p>
+                                                    <p>Appointment on</p>
+                                                    <p>Status</p>
+                                                    <p>Status</p>
+                                                </div>
+                                                <div class="float-right">
+                                                    <p>1st Nov 2018</p>
+                                                    <p>2nd Nov 2018</p>
+                                                    <p>Booked</p>
+                                                    <p>2nd Nov 2018</p>
+
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Qty</th>
+                                            <th>Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-light">
+                                            <td>general AC repair</td>
+                                            <td>1</td>
+                                            <td>299 A$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>upto 1T</td>
+                                            <td>1</td>
+                                            <td>99 A$</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="font-weight-bold">sub total</td>
+                                            <td>398 A$</td>
+                                        </tr>
+                                        <tr class="no-border">
+                                            <td></td>
+                                            <td>GST</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="no-border">
+                                            <td></td>
+                                            <td>service</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="no-border">
+                                            <td></td>
+                                            <td class=" font-weight-bold">Total</td>
+                                            <td>398 A$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row">
+                                    <div class="col-md-4 col-5">
+                                        <div class="billedTo">
+                                            <p>Billed to</p>
+                                            <h4>Digitask LLC</h4>
+                                            <h6>Downtown Area, Sidney</h6>
+                                            <h6>(077)989-4459</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-7">
+                                        <div class="billedTo right">
+                                            <button class="new-btn blue mt-2">398 A$ + On inspection Charges</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne1">
+                                        Order ID #8483 <i class="fas fa-chevron-down float-right"></i></a>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+    <script>
+        function toggle() {
+            var a = document.getElementById('main');
+            a.classList.toggle('hidden-menu');
+        }
+    </script>
+
+</body>
+
+</html>

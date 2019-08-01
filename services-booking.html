@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Service-book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div class="sidebar hidden-menu" id="main">
+        <div class="sidebar-text">
+            <div class="text-box">
+                <p>cart</p>
+                <a href="#" onclick="toggle()">close</a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text border-element">
+            <div class="text-box">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>AC Repair</li>
+                    <li>99$</li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text">
+            <div class="text-box border-element">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>
+                        AC Plumbing
+                        <p>+ on site inspection</p>
+                    </li>
+                    <li>99$</li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="sidebar-text">
+            <div class="text-box border-element">
+                <ul>
+                    <li><img src="./assets/electronics/ac.png" class="img-fluid"></li>
+                    <li>Basic Cost</li>
+                    <li>99$</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class=" bottom">
+            <div class="sidebar-text border-element">
+                <div class="text-box">
+                    <p>total</p>
+                    <p>499 A$</p>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="check">
+                <p>Checkout</p>
+            </div>
+
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-2">
+                        <ul>
+                            <li>
+                                <a href="index.html"> <img src="./assets/logo_top.png"> </a>
+                            </li>
+                            <li class="d-none d-md-none d-lg-none d-xl-inline-block">
+                                <i class="fas fa-map-marker-alt nav-icon"></i>
+                                <input type="text" value="Sidney" disabled>
+                            </li>
+                            <li class="d-none d-md-inline-block">
+                                <i class="fas fa-search nav-icon extend"></i>
+                                <input type="text" placeholder="Search for a service" class="location">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-10">
+                        <ul class="right-navigation">
+                            <li><a data-toggle="modal" data-target="#exampleModal">
+                                    <i class="fas fa-mobile-alt"></i><span class="d-none d-lg-none d-xl-inline-block">Download
+                                        Apps</span>
+                                </a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user"></i> Roger <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">My Orders</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <li class="active-item" onclick="toggle()"><i class="fas fa-shopping-cart"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="book-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="out-table">
+                        <div class="table-content">
+                            <h4>
+                                AC Services
+                            </h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+
+                                        <th>item</th>
+                                        <th>price</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+
+                                        <td>basic cost
+                                            <p>We charge a basic visit cost</p>
+                                        </td>
+                                        <td>99 A$</td>
+                                        <td>
+                                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                <button type="button" class="new-btn purple grp-btn-left disabled-btn">-</button>
+                                                <p>1</p>
+                                                <button type="button" class="new-btn purple grp-btn-right disabled-btn">+</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>general repair</td>
+                                        <td>200 A$</td>
+                                        <td>
+                                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                <button type="button" class="new-btn purple grp-btn-left">-</button>
+                                                <p>1</p>
+                                                <button type="button" class="new-btn purple grp-btn-right">+</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>upto 1T</td>
+                                        <td>99 A$</td>
+                                        <td><button class="new-btn purple tab-btn">Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>upto 1.5T</td>
+                                        <td>40 A$</td>
+                                        <td><button class="new-btn purple tab-btn">Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>installation</td>
+                                        <td class="disabled-text">upon inspection</td>
+                                        <td><button class="new-btn purple tab-btn">Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>repair</td>
+                                        <td class="disabled-text">upon inspection</td>
+                                        <td><button class="new-btn purple tab-btn">Add</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>repair filter</td>
+                                        <td class="disabled-text">upon inspection</td>
+                                        <td><button class="new-btn purple tab-btn">Add</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="booking-bottom">
+                                <div class="row">
+                                    <div class="col-md-8 col-6">
+                                        <p>TOTAL 599 A$ + On Inspection Cost</p>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                        <button class="new-btn purple tab-btn" onclick="window.location='login.html'">Book</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="table-note">
+                        <h5>note</h5>
+                        <div class="table-details">
+                            <div class="check-left">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="check-right">
+                                <p>New Parts (if used) will be charged extra</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="check-left">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="check-right">
+                                <p>Warranty on parts will be as per Brand</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="check-left">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="check-right">
+                                <p>30 day warranty will be Provided</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="check-left">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="check-right">
+                                <p> If an issue id reported by our technician but<br> the
+                                    customer fails to act, it will not be Digitask responsibility.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <h5>procedure</h5>
+                        <p>Cost can vary post inspection according <br> to the dept of the issue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        function toggle() {
+            var a = document.getElementById('main');
+            a.classList.toggle('hidden-menu');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
+
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-9">
+                        <ul class="logo-top">
+                            <li>
+                                <a href="index.html"> <img src="./assets/logo_top.png"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 col-3">
+                        <ul class="right-navigation">
+                            <li class="active-item"><a href="">back</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="confirm-book">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xl-8">
+
+
+                    <div id="accordion" role="tablist">
+                        <div class="card login-card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                        Login or Signup <i class="fas fa-chevron-down float-right"></i></a>
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-3">
+                                            <div class="form-modal">
+                                                <h5 class="font-weight-bold">Login</h5>
+                                                <input type="text" placeholder="Email Or Phone">
+                                                <input type="text" placeholder="Password">
+                                                <button class="new-btn purple" onclick="window.location='confirm-booking.html'">Login</button>
+
+                                                <div class="modal-foot">
+                                                    <p>Social Login</p>
+                                                    <ul>
+                                                        <li><button class="new-btn fb">Facebook</button></li>
+                                                        <li><button class="new-btn fb google">Google</button></li>
+                                                    </ul>
+                                                    <h5>Dont have an account?</h5>
+                                                    <button class="new-btn purple outline">Signup</button>
+                                                    <span class="login-or">or</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Address | Service Location <i class="fas fa-chevron-down float-right"></i></a>
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+
+                                <div class="map-location">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5796128702273!2d77.58993051430464!3d12.998718217800917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae164451c79e63%3A0x4b46243086327ed5!2sBangalore+Palace%2C+Jayamahal%2C+Bengaluru%2C+Karnataka+560006!5e0!3m2!1sen!2sin!4v1545983054454"
+                                        frameborder="0" allowfullscreen></iframe>
+                                    <div class="search-wrapper">
+                                        <i class="fas fa-search"></i>
+                                        <input type="text" placeholder="Search Location">
+                                    </div>
+                                    <p>Bangalore Palace, Karnataka 01, India</p>
+                                </div>
+                                <div class="address-form">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control my-1" id="inlineFormInputName2"
+                                                    placeholder="Door Flat No">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control my-1" id="inlineFormInputName2"
+                                                    placeholder="Landmark">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="custom-select my-1" id="inlineFormCustomSelect">
+                                                    <option selected>Home</option>
+                                                    <option value="1">Office</option>
+                                                    <option value="2">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="submit" class="new-btn map my-1">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        appointment slot <i class="fas fa-chevron-down float-right"></i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="months">
+                                        <form>
+                                            <div class="form-row align-items-center">
+                                                <div class="col-xl-3 col-6">
+                                                    <select name="month" class="form-control">
+                                                        <option value="January">January</option>
+                                                        <option value="February">February</option>
+                                                        <option value="March">March</option>
+                                                        <option value="April">April</option>
+                                                        <option value="may">May</option>
+                                                        <option value="June">June</option>
+                                                        <option value="July">July</option>
+                                                        <option value="August">August</option>
+                                                        <option value="September">September</option>
+                                                        <option value="October">October</option>
+                                                        <option value="November">November</option>
+                                                        <option value="December">December</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xl-2 col-6">
+                                                    <select name="year" class="form-control">
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2022">2022</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="owl-carousel owl-theme" id="owl-demo">
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>1</h4>
+                                                    <p>MON</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>2</h4>
+                                                    <p>tue</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>3</h4>
+                                                    <p>wed</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>4</h4>
+                                                    <p>thus</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>5</h4>
+                                                    <p>fri</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>6</h4>
+                                                    <p>sat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>7</h4>
+                                                    <p>sun</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>8</h4>
+                                                    <p>MON</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>9</h4>
+                                                    <p>tue</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>10</h4>
+                                                    <p>wed</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>11</h4>
+                                                    <p>thus</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>12</h4>
+                                                    <p>fri</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>13</h4>
+                                                    <p>sat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date-range item">
+                                            <div class="date-grid">
+                                                <div class="date">
+                                                    <h4>14</h4>
+                                                    <p>sun</p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="time-slots">
+                                        <p>available slots for thursday</p>
+                                        <ul>
+                                            <li>10 AM to 11 AM</li>
+                                            <li>11 AM to 12 PM</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <img src="./assets/cash.png" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            pay with cash
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="pay" name="pay">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <img src="./assets/credit.png" class="img-fluid">
+                                        </li>
+                                        <li>
+                                            pay online
+                                        <li>
+                                            <input type="radio" id="pay" name="pay">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button-book">
+                            <button class="new-btn purple disabled-btn">Book</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-xl-4">
+                    <div class="billing-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>your cart</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>AC repair</td>
+                                    <td>99$</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>house deep cleaning</td>
+                                    <td>399$</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>basic cost</td>
+                                    <td>99$</td>
+
+                                </tr>
+                                <tr class="total-tab ext">
+                                    <td>subtotal</td>
+                                    <td>498$</td>
+                                </tr>
+                                <tr class="total-tab">
+                                    <td>GST(10%)</td>
+                                    <td>45$</td>
+                                </tr>
+                                <tr class="total-tab">
+                                    <td>service TAX</td>
+                                    <td>45$</td>
+                                </tr>
+                                <tr class="total-tab ext ext-end">
+                                    <td>total</td>
+                                    <td>588$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+
+            margin: 0,
+            pagination: false,
+            items: 7,
+            itemsMobile: [360, 3],
+            itemsTablet: [480, 3],
+            itemsDesktopSmall: [700, 5],
+            itemsDesktop: [900, 7]
+
+        });
+    </script>
+
+</body>
+
+</html>
